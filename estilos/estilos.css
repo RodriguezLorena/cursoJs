@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(248, 206, 213, 0.856);
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1-5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
