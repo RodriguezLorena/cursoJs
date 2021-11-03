@@ -10,7 +10,7 @@ if (contraseñaUsuario == "BIBLIOTECA") {
     if ((genero === "terror") || (genero === "accion")) {
 
         alert("si es mayor de 18 años, dirijase a la seccion adultos ");
-        document.write("Ha ingresado " + genero + " Si usted es mayor de 16 años, dirijase a la seccion de adultos ");
+        document.write("Ha ingresado " + genero + " Si usted es mayor de 18 años, dirijase a la seccion de adultos ");
         console.log("dirijase a la seccion de adultos");
 
     } else if ((genero === "infantil") || (genero === "comedia")) {
