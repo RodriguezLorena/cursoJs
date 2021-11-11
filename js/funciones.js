@@ -36,7 +36,7 @@ let division = (valor, cuota) => valor / cuota;
 let suma = (monto, interes) => monto + (monto * interes);
 document.write("Usted a ingresado " + capitalInicial + " y lo va a pagar en " +
     cantidadDeCuotas + " cuotas." + ("<br>") + " Su cuota sin interes es: $" +
-    (division(capitalInicial, cantidadDeCuotas)) + " por mes" + ("<br>"));
+    parseFloat(division(capitalInicial, cantidadDeCuotas).toFixed(2)) + " por mes" + ("<br>"));
 
 let totalPorMes = division(suma(capitalInicial, aumento), cantidadDeCuotas);
-document.write("Con el interes debe abonar un total de : $" + (totalPorMes) + " en cada cuota");
+document.write("Con el interes debe abonar un total de : $" + parseFloat(totalPorMes.toFixed(2)) + " en cada cuota");
