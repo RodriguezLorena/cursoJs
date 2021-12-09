@@ -108,7 +108,7 @@ let cargaProductos = [
                   botonEliminar.parentElement.remove()
                 carritoDeCompras = carritoDeCompras.filter(elemento => elemento.id != productoAgregar.id)
                 localStorage.setItem("keyProductosElim", JSON.stringify (carritoDeCompras))
-                //todavia tengo dificultad con el storage.
+                //todavia tengo dificultad con el storage. tengo que eliminar los poductos a medida que el usuario elimina
             
                 }else{
                     productoAgregar.cantidad = productoAgregar.cantidad - 1
