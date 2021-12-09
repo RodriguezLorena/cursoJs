@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style-dom.css">
+    <title>Eventos/ Rodriguez Lorena</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Ir a Inicio</a>
+            <a class="navbar-brand" href="../desafios/eventosEntregable.html">Desafio Entregable</a>
+            <select id="selecVariedad">
+                <option value="all">Buscar Productos</option>
+                <option value="Pizzas">Pizzas</option>
+                <option value="Hamburguesas">Hambuerguesas</option>
+                <option value="Picadas">Picadas</option>
+            </select>
+        </div>
+    </nav>
+    <div id="definicion"></div>
+    <div class="titulo">
+        <span class="titulo" id="spam"></span>
+    </div>
+
+    <div class="container">
+        <form id="idForm">
+            <div>
+                <label for="nombre" class="form-label">Producto</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="precio" name="precio">
+            </div>
+            <div>
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" name="cantidad">
+            </div>
+             <br>
+            <button type="submit" class="btn btn-secondary">Cargar Productos</button>
+           
+        </form>
+        <br>
+        <div class="productos" id="cargaDeProductos"></div>
+        <button class="btn btn-secondary" id="boton1">Mostrar Productos</button>
+    </div>
+   
+    <script src="../js/eventosComp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+</body>
+</html>
