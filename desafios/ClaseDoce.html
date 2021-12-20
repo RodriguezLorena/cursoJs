@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQueryDesafio/Lorena Rodriguez</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../estilos/style-Event.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Simulador Carrito</h1>
+        <a href="../index.html">Ir a Inicio</a><br>
+        <button id="boton-carrito"><i class="fas fa-cart-arrow-down"></i><span id="contadorCarrito">0</span></button>
+        <select id="selecVariedad">
+            <option value="all">Buscar Productos</option>
+            <option value="Pizzas">Pizzas</option>
+            <option value="Hamburguesas">Hambuerguesas</option>
+            <option value="Picadas">Picadas</option>
+        </select>
+
+    </header>
+
+    <main id="contenedor-productos"></main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-window-close"></i></button>
+            <div id="carrito-contenedor">
+        </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/JQueryDesafio.js"></script>
+
+</body>
+
+</html>
